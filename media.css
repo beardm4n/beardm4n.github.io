@@ -100,6 +100,9 @@
 
 @media (max-width: 796px) {
   /* HEADER */
+  body .main-container .header {
+    width: 50%;
+  }
   body .main-container .header .header-line {
     font-size: 40px;
   }
@@ -112,15 +115,21 @@
 @media (max-width: 481px) {
     /* HEADER */
 
+  body .main-container .header {
+    width: 70%;
+  }
   body .main-container .header .header-line {
-    font-size: 18px;
+    font-size: 30px;
   }
   body .main-container .header .header-line-paragraph {
-    font-size: 8.6px;
+    font-size: 20px;
   }
   /* MAIN INFORMATION */
+  body .main-container .main-information {
+    width: 90%;
+  }
   body .main-container .about-me .about-me-header {
-    font-size: 14px;
+    font-size: 20px;
     box-shadow: 0px 3px 1px 0px #75867b;
   }
   body .main-container .about-me .about-me-header::after {
@@ -132,11 +141,11 @@
     height: 2px;
   }
   body .main-container .about-me .about-me-paragraph {
-    font-size: 10px;
-    line-height: 12.5px;
+    font-size: 14px;
+    line-height: 18px;
   }
   body .main-container .skills .skills-header {
-    font-size: 14px;
+    font-size: 20px;
     box-shadow: 0px 3px 1px 0px #75867b;
   }
   body .main-container .skills .skills-header::after {
@@ -151,15 +160,15 @@
   body .main-container .skills .skills-other-paragraph,
   body .main-container .skills .skills-last-paragraph,
   body .main-container .skills .skills-list {
-    font-size: 10px;
-    line-height: 12.5px;
+    font-size: 14px;
+    line-height: 18px;
   }
 
 
   /* FOOTER */
   body .footer span {
 
-    font-size: 5.9px;
+    font-size: 6px;
     /* border: 1px solid red; */
     width: 45px;
   }
@@ -167,8 +176,8 @@
   body .footer .user-links .phone,
   body .footer .user-links .email,
   body .footer .user-links .telegram {
-    font-size: 5.9px;
-    height: 6.3px;
+    font-size: 9px;
+    height: 7.5px;
   }
   body .footer .user-links .phone:hover,
   body .footer .user-links .email:hover,
@@ -180,7 +189,7 @@
   body .footer .user-links {
 
     margin-left: 0px;
-    border-left: 2px solid #a12626;
+    border-left: 3px solid #a12626;
   }
   body .footer .user-links img {
     width: 12px;
