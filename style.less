@@ -1,0 +1,418 @@
+/* 
+   ======================================
+   VARIABLES
+   =====================================
+*/
+// HEADER
+// create a color for text
+@headerLineColor: #cccccc;
+// create the text's size
+@headerLineSize: 24px;
+
+// create the color for headline
+@headlineColor: #d9ddda;
+// create the hedline's weight
+@h1Weight: 700;
+// create the headline's size
+@h1Size: 64px;
+
+
+// a color of the shadow
+@shadowColor: #75867b;
+
+
+// MAIN_INFORMATION
+// set the size of the article title
+@h2Size: 35px;
+
+// set the size of the arctile paragraph
+@pSize: 18px;
+// set line spacing
+@lineSpacing: 24px;
+// set weight for main words
+@weightSpan: 500;
+
+// FOOTER
+// set the contacts weight
+@sizeContacts: 16px;
+// =====================================================================================================================
+
+html {
+   // set the text size for all
+   font-size: @pSize;
+   font-weight: 400;
+   font-family: 'EB Garamond', 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif, sans-serif;
+}
+/* 
+   =============================================================
+   ORGANIZATION OF THE MAIN CONAINER
+   =============================================================
+*/
+body {
+   // let's set the top border
+   border-top: 10px solid rgb(161, 38, 38);
+   .main-container {
+      // /*set the flexbox*/
+      display: flex;
+      // /*main axis direction*/
+      flex-direction: column;
+      // /*position on main axis*/
+      justify-content: space-around;
+      // /*position on transverse axis*/
+      align-items: center;
+
+      // /*set the height to full screen*/
+      height: 100%;
+      
+      // /*set the background to the page*/
+      background: #293f50;
+      // /*to fill the background*/
+      background-size: 100%;
+      
+      // /*for gradient positioning*/
+      position: relative;
+      
+      .main-overlay {
+         // /* set gradient */
+         // /* location inside the main container */
+         position: absolute;
+         left: 0; 
+         top: 0;
+         width: 100%;
+         height: 100%;
+      
+         // /*transprency*/
+         opacity: .75;
+         // /*location on Z axis*/
+         z-index: 0;
+      
+         // /*gradient*/
+         background: #42686e; ///* fallback for old browsers */
+         background: linear-gradient(62deg, rgba(10,38,47,1) 0%, rgba(17,63,77,1) 53%, rgba(40,64,110,1) 100%); ///* Chrome 10-25, Safari 5.1-6 */
+         background: linear-gradient(62deg, rgba(10,38,47,1) 0%, rgba(17,63,77,1) 53%, rgba(40,64,110,1) 100%); ///*W3C, IE 10+/ Ed */
+      }
+      
+      /* 
+      =============================================================
+      HEADER
+      =============================================================
+      */
+      .header {
+         // /* WE WILL THE HEADER SETTINGS */
+         // /*set the flexbox*/
+         display: flex;
+         // /* set the position of elements */
+         flex-direction: column;
+         // /* set the center of the transverse axis*/
+         align-items: center;
+         // /* set the width of the header */
+         width: 40%;
+
+         // /* bring to the forefront the header */
+         z-index: 2;
+
+         // /* make the bottom frame*/
+         border-radius: 20px;
+
+         // let's set an external indents for header
+         margin: 30px 0 40px 0;
+         
+         .header-line {
+            // /* WE WILL CREATE SETTINGS FOR h1 */
+            // /* set the size of headline */
+            font-size: @h1Size;
+            // /* set the thickness of headline  */
+            font-weight: @h1Weight;
+            // /* set the text color */
+            color: @headlineColor;
+            // /* set transparancy */
+            opacity: 0.9;
+         }
+         
+         .header-line-paragraph {
+            // /* WE WILL CREATE SETTINGS FOR PARAGRAPH */
+            // /* set the size of the paragraph */
+            font-size: @headerLineSize;
+            // /* set transparency */
+            opacity: 0.8;
+            // /* set the text color */
+            color: @headerLineColor;
+            
+            // /* set external padding */
+            margin: 10px 0;
+         }   
+      }
+      
+      .shadow-header {
+         // /* SET SHADOW FOR HEADER */
+         box-shadow: 0px 3px 5px 2px @shadowColor; /* options of the shadow */
+      }
+      
+
+
+   // ====================================================================================================
+
+   // ======================================================
+   //                MAIN INFORMATION
+   // ======================================================
+      .main-information {
+         // /*WE WILL CREATE SETTINGS FOR MAIN INFORMATION*/
+         // /*set the flexbox*/
+         display: flex;
+         // /* set the position of elements */
+         flex-direction: column;
+         // /* set the position on main axis*/
+         justify-content: space-between;
+         // /* set the center of the transverse axis*/
+         align-items: center;
+         // /* set the width of the header */
+         width: 70%;
+         // bring to the forefront the header
+         z-index: 2;
+         }
+         // let's set up to the first arcticle 
+         .about-me {
+            // set the flexbox
+            display: flex;
+            // set the position of elements
+            flex-direction: column;
+            // set the center of the transverse axis
+            align-items: center;
+            // let's set external indent
+            margin: 0 0 50px 0;
+
+            // set tthe parameters when you hover
+            // &:hover {
+            //    box-shadow: inset 0px 6px 20px -5px @shadowColor; // options of the shadow
+            //    // set the radius of the border
+            //    border-radius: 10px;
+            // }
+
+            // set the setting for the first article title
+            .about-me-header {
+               // set the size
+               font-size: @h2Size;
+               // set the distance inside of the article title
+               padding: 0 10px;
+               // set transparancy 
+               opacity: .8;
+               // set the color
+               color: @headlineColor;
+               // SET SHADOW FOR HEADER 
+               box-shadow: 0px 5px 1px 0px @shadowColor; // options of the shadow
+               
+               // set the radius of the border
+               border-radius: 50px;
+
+               // set external padding
+               margin: 15px 0 0 0;
+               &::after {
+                  content: "";
+                  width: 15px;
+                  height: 3px;
+                  background-color: rgb(255, 0, 0);
+                  border-radius: 20px;
+
+                  /*делаем для того, чтобы элемент отобразился рядом с нашим блочным элементом h2*/
+                  display: inline-block;
+                  
+                  /*вертикальное выравнивание*/
+                  vertical-align: middle;
+                  
+                  /*отступ от заголовка*/
+                  margin-left: 5px;
+                  
+                  // set transparancy
+                  opacity: 0.8;
+               }
+               &::before {
+                  content: "";
+                  width: 15px;
+                  height: 3px;
+                  background-color: rgb(255, 0, 0);
+                  border-radius: 20px;
+                  
+                  /*делаем для того, чтобы элемент отобразился рядом с нашим блочным элементом h2*/
+                  display: inline-block;
+                  
+                  /*вертикальное выравнивание*/
+                  vertical-align: middle;
+                  
+                  /*отступ от заголовка*/
+                  margin-right: 5px;
+                  
+                  // set transparancy
+                  opacity: 0.8;
+               }
+            }
+            // set sth settings for the first article paragraph
+            .about-me-paragraph {
+               // set the size
+               font-size: @pSize;
+               // set line spacing
+               line-height: @lineSpacing;
+               // set external padding
+               margin: 20px 0 0 0;
+               // set the distance inside of the paragraph
+               padding: 5px 10px 15px 10px;
+               color:@headerLineColor;
+               // set transparancy
+               opacity: .8;
+               // set the location
+               align-self: flex-start;
+            }
+         }
+         .about-me-shadow{
+            // SET SHADOW FOR HEADER 
+            box-shadow: 0px 3px 5px 1px @shadowColor; // options of the shadow
+            // set the radius of the border
+            border-radius: 10px;
+         }
+
+         // Let's set up to the second arcticle
+         .skills {
+            .about-me;
+            .skills-header {
+               .about-me-header;
+           }
+            .skills-first-paragraph {
+              .about-me-paragraph;
+              padding: 5px 10px 0 10px;
+           }
+            .skills-other-paragraph {
+               // set the size
+               font-size: @pSize;
+               // set line spacing
+               line-height: @lineSpacing;
+               // set the distance inside of the paragraph
+               padding: 5px 10px;
+               color:@headerLineColor;
+               // set transparancy
+               opacity: .8;
+               // set the location
+               align-self: flex-start;
+           }
+            .skills-last-paragraph {
+               // set the size
+               font-size: @pSize;
+               // set line spacing
+               line-height: @lineSpacing;
+               // set the distance inside of the paragraph
+               padding: 5px 10px 15px 10px;
+               color:@headerLineColor;
+               // set transparancy
+               opacity: .8;
+               // set the location
+               align-self: flex-start;
+            }
+            .skills-list {
+               // set the size
+               font-size: @pSize;
+               // set line spacing
+               line-height: @lineSpacing;
+               // set the distance inside of the paragraph
+               padding: 5px 10px 0 10px;
+               color:@headerLineColor;
+               // set transparancy
+               opacity: .8;
+               // set the location
+               align-self: flex-start;
+               li {
+                  margin: 5px 0 5px 60px;
+                  list-style-type: disc;
+               }
+            }
+            .external-links {
+               text-decoration: none;
+               color: rgb(255, 65, 65);
+               // set the setting when you hover on the link
+               &:hover{
+                  text-decoration: underline;
+                  text-decoration-style: double;
+               }
+            }
+            span {
+               text-decoration: underline;
+               text-decoration-color: rgb(255, 65, 65);
+               font-style: italic;
+               font-weight: @weightSpan;
+            }
+         }  
+         .skills-shadow {
+            .about-me-shadow;
+         }
+      }
+      // ===============================================================================================
+      
+      /* =====================================================
+         FOOTER
+         =====================================================
+      */
+      .footer {
+         // bring to the forefront the header
+         z-index: 2;
+         // set the flexbox
+         display: flex;
+         // let's set the location along the main axis
+         justify-content: flex-start;
+         // let's set the location along the transverse axis
+         align-items: center;
+         // set the width
+         width: 90%;
+         
+         span {
+            display: inline-block;
+            color: @headlineColor;
+            opacity: 0.7;
+            // set the copyright's weight
+            font-size: @sizeContacts;
+         }
+         
+         .user-links {
+            // set the flexbox
+            display: flex;
+            // align images with text 
+            justify-content: center;
+            align-items: center;
+            // set transparancy
+            opacity: .6;
+            // set indent from SPAN
+            margin-left: 10px;
+            // set the left border 
+            border-left: 3px solid rgb(161, 38, 38);
+            
+            // let's set general settings for links
+            .phone {
+               // remove the bottom line
+               text-decoration: none;
+               // set a color
+               color: @headlineColor;
+               // set the distanse inside link
+               padding: 0 5px;
+               // set the contact's weight
+               font-size: @sizeContacts;
+               // set the shadow for the links
+               box-shadow: 0px 2px 2px 1px @shadowColor; // options of the shadow
+               border-radius: 5px;
+               height: 20px;
+               // set the shadow for the links when you hover
+               &:hover {
+                  box-shadow: inset 0px 2px 3px 2px @shadowColor; // options of the shadow
+                  border-radius: 5px;
+                  height: 20px;
+               }
+            }
+            .email,
+            .telegram {
+               .phone;
+            }
+            
+            img {
+            // set width
+            width: 24px;
+            }
+         }
+      }   
+   }
+
+

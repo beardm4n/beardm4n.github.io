@@ -1,0 +1,188 @@
+/* WIDTH LESS 1180 px */
+@media (max-width: 1180px) {
+  /* HEADER */
+  body .main-container .header .header-line {
+    font-size: 52px;
+  }
+  body .main-container .header .header-line-paragraph {
+    font-size: 20px;
+  }
+  /* MAIN INFORMATION */
+  body .main-container .about-me .about-me-header {
+    font-size: 29px;
+  }
+  body .main-container .about-me .about-me-header::after {
+    width: 12.5px;
+  }
+  body .main-container .about-me .about-me-header::before {
+    width: 12.5px;
+  }
+  body .main-container .skills .skills-header {
+    font-size: 29px;
+  }
+  body .main-container .skills .skills-header::after {
+    width: 12.5px;
+  }
+  body .main-container .skills .skills-header::before {
+    width: 12.5px;
+  }
+}
+
+/* ========================================================================================== */
+/* WIDTH LESS 960 px */
+
+@media (max-width: 961px) {
+  /* HEADER */
+  body .main-container .header .header-line {
+    font-size: 44px;
+  }
+  body .main-container .header .header-line-paragraph {
+    font-size: 19px;
+  }
+  /* MAIN INFORMATION */
+  body .main-container .about-me .about-me-header {
+    font-size: 25px;
+  }
+  body .main-container .about-me .about-me-header::after {
+    width: 10px;
+  }
+  body .main-container .about-me .about-me-header::before {
+    width: 10px;
+  }
+  body .main-container .about-me .about-me-paragraph {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  body .main-container .skills .skills-header {
+    font-size: 25px;
+  }
+  body .main-container .skills .skills-header::after {
+    width: 10px;
+  }
+  body .main-container .skills .skills-header::before {
+    width: 10px;
+  }
+  body .main-container .skills .skills-first-paragraph,
+  body .main-container .skills .skills-other-paragraph,
+  body .main-container .skills .skills-last-paragraph,
+  body .main-container .skills .skills-list {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+
+  /* FOOTER */
+  body .footer span {
+
+    font-size: 13px;
+  }
+
+  body .footer .user-links .phone,
+  body .footer .user-links .email,
+  body .footer .user-links .telegram {
+
+
+    font-size: 13px;
+    height: 14px;
+  }
+  body .footer .user-links .phone:hover,
+  body .footer .user-links .email:hover,
+  body .footer .user-links .telegram:hover {
+
+    border-radius: 5px;
+    height: 16px;
+  }
+}
+
+
+/* ========================================================================================== */
+/* WIDTH LESS 769 px */
+
+@media (max-width: 796px) {
+  /* HEADER */
+  body .main-container .header .header-line {
+    font-size: 40px;
+  }
+}
+
+
+/* ========================================================================================== */
+/* WIDTH LESS 480 px */
+
+@media (max-width: 481px) {
+    /* HEADER */
+
+  body .main-container .header .header-line {
+    font-size: 18px;
+  }
+  body .main-container .header .header-line-paragraph {
+    font-size: 8.6px;
+  }
+  /* MAIN INFORMATION */
+  body .main-container .about-me .about-me-header {
+    font-size: 14px;
+    box-shadow: 0px 3px 1px 0px #75867b;
+  }
+  body .main-container .about-me .about-me-header::after {
+    width: 7px;
+    height: 2px;
+  }
+  body .main-container .about-me .about-me-header::before {
+    width: 7px;
+    height: 2px;
+  }
+  body .main-container .about-me .about-me-paragraph {
+    font-size: 10px;
+    line-height: 12.5px;
+  }
+  body .main-container .skills .skills-header {
+    font-size: 14px;
+    box-shadow: 0px 3px 1px 0px #75867b;
+  }
+  body .main-container .skills .skills-header::after {
+    width: 7px;
+    height: 2px;
+  }
+  body .main-container .skills .skills-header::before {
+    width: 7px;
+    height: 2px;
+  }
+  body .main-container .skills .skills-first-paragraph,
+  body .main-container .skills .skills-other-paragraph,
+  body .main-container .skills .skills-last-paragraph,
+  body .main-container .skills .skills-list {
+    font-size: 10px;
+    line-height: 12.5px;
+  }
+
+
+  /* FOOTER */
+  body .footer span {
+
+    font-size: 5.9px;
+    /* border: 1px solid red; */
+    width: 45px;
+  }
+
+  body .footer .user-links .phone,
+  body .footer .user-links .email,
+  body .footer .user-links .telegram {
+    font-size: 5.9px;
+    height: 6.3px;
+  }
+  body .footer .user-links .phone:hover,
+  body .footer .user-links .email:hover,
+  body .footer .user-links .telegram:hover {
+
+    border-radius: 5px;
+    height: 7.2px;
+  }
+  body .footer .user-links {
+
+    margin-left: 0px;
+    border-left: 2px solid #a12626;
+  }
+  body .footer .user-links img {
+    width: 12px;
+  }
+}

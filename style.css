@@ -1,0 +1,336 @@
+/* 
+   ======================================
+   VARIABLES
+   =====================================
+*/
+html {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'EB Garamond', 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif, sans-serif;
+}
+/* 
+   =============================================================
+   ORGANIZATION OF THE MAIN CONAINER
+   =============================================================
+*/
+body {
+  border-top: 10px solid #a12626;
+  /* =====================================================
+         FOOTER
+         =====================================================
+      */
+}
+body .main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  background: #293f50;
+  background-size: 100%;
+  position: relative;
+  /* 
+      =============================================================
+      HEADER
+      =============================================================
+      */
+}
+body .main-container .main-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .75;
+  z-index: 0;
+  background: #42686e;
+  background: linear-gradient(62deg, #0a262f 0%, #113f4d 53%, #28406e 100%);
+}
+body .main-container .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  z-index: 2;
+  border-radius: 20px;
+  margin: 30px 0 40px 0;
+}
+body .main-container .header .header-line {
+  font-size: 64px;
+  font-weight: 700;
+  color: #d9ddda;
+  opacity: 0.9;
+}
+body .main-container .header .header-line-paragraph {
+  font-size: 24px;
+  opacity: 0.8;
+  color: #cccccc;
+  margin: 10px 0;
+}
+body .main-container .shadow-header {
+  box-shadow: 0px 3px 5px 2px #75867b;
+  /* options of the shadow */
+}
+body .main-container .main-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  z-index: 2;
+}
+body .main-container .about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 50px 0;
+}
+body .main-container .about-me .about-me-header {
+  font-size: 35px;
+  padding: 0 10px;
+  opacity: .8;
+  color: #d9ddda;
+  box-shadow: 0px 5px 1px 0px #75867b;
+  border-radius: 50px;
+  margin: 15px 0 0 0;
+}
+body .main-container .about-me .about-me-header::after {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background-color: #ff0000;
+  border-radius: 20px;
+  /*делаем для того, чтобы элемент отобразился рядом с нашим блочным элементом h2*/
+  display: inline-block;
+  /*вертикальное выравнивание*/
+  vertical-align: middle;
+  /*отступ от заголовка*/
+  margin-left: 5px;
+  opacity: 0.8;
+}
+body .main-container .about-me .about-me-header::before {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background-color: #ff0000;
+  border-radius: 20px;
+  /*делаем для того, чтобы элемент отобразился рядом с нашим блочным элементом h2*/
+  display: inline-block;
+  /*вертикальное выравнивание*/
+  vertical-align: middle;
+  /*отступ от заголовка*/
+  margin-right: 5px;
+  opacity: 0.8;
+}
+body .main-container .about-me .about-me-paragraph {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 20px 0 0 0;
+  padding: 5px 10px 15px 10px;
+  color: #cccccc;
+  opacity: .8;
+  align-self: flex-start;
+}
+body .main-container .about-me-shadow {
+  box-shadow: 0px 3px 5px 1px #75867b;
+  border-radius: 10px;
+}
+body .main-container .skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 50px 0;
+}
+body .main-container .skills .about-me-header {
+  font-size: 35px;
+  padding: 0 10px;
+  opacity: .8;
+  color: #d9ddda;
+  box-shadow: 0px 5px 1px 0px #75867b;
+  border-radius: 50px;
+  margin: 15px 0 0 0;
+}
+body .main-container .skills .about-me-header::after {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background-color: #ff0000;
+  border-radius: 20px;
+  /*делаем для того, чтобы элемент отобразился рядом с нашим блочным элементом h2*/
+  display: inline-block;
+  /*вертикальное выравнивание*/
+  vertical-align: middle;
+  /*отступ от заголовка*/
+  margin-left: 5px;
+  opacity: 0.8;
+}
+body .main-container .skills .about-me-header::before {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background-color: #ff0000;
+  border-radius: 20px;
+  /*делаем для того, чтобы элемент отобразился рядом с нашим блочным элементом h2*/
+  display: inline-block;
+  /*вертикальное выравнивание*/
+  vertical-align: middle;
+  /*отступ от заголовка*/
+  margin-right: 5px;
+  opacity: 0.8;
+}
+body .main-container .skills .about-me-paragraph {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 20px 0 0 0;
+  padding: 5px 10px 15px 10px;
+  color: #cccccc;
+  opacity: .8;
+  align-self: flex-start;
+}
+body .main-container .skills .skills-header {
+  font-size: 35px;
+  padding: 0 10px;
+  opacity: .8;
+  color: #d9ddda;
+  box-shadow: 0px 5px 1px 0px #75867b;
+  border-radius: 50px;
+  margin: 15px 0 0 0;
+}
+body .main-container .skills .skills-header::after {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background-color: #ff0000;
+  border-radius: 20px;
+  /*делаем для того, чтобы элемент отобразился рядом с нашим блочным элементом h2*/
+  display: inline-block;
+  /*вертикальное выравнивание*/
+  vertical-align: middle;
+  /*отступ от заголовка*/
+  margin-left: 5px;
+  opacity: 0.8;
+}
+body .main-container .skills .skills-header::before {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background-color: #ff0000;
+  border-radius: 20px;
+  /*делаем для того, чтобы элемент отобразился рядом с нашим блочным элементом h2*/
+  display: inline-block;
+  /*вертикальное выравнивание*/
+  vertical-align: middle;
+  /*отступ от заголовка*/
+  margin-right: 5px;
+  opacity: 0.8;
+}
+body .main-container .skills .skills-first-paragraph {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 20px 0 0 0;
+  padding: 5px 10px 15px 10px;
+  color: #cccccc;
+  opacity: .8;
+  align-self: flex-start;
+  padding: 5px 10px 0 10px;
+}
+body .main-container .skills .skills-other-paragraph {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 5px 10px;
+  color: #cccccc;
+  opacity: .8;
+  align-self: flex-start;
+}
+body .main-container .skills .skills-last-paragraph {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 5px 10px 15px 10px;
+  color: #cccccc;
+  opacity: .8;
+  align-self: flex-start;
+}
+body .main-container .skills .skills-list {
+  font-size: 18px;
+  line-height: 24px;
+  padding: 5px 10px 0 10px;
+  color: #cccccc;
+  opacity: .8;
+  align-self: flex-start;
+}
+body .main-container .skills .skills-list li {
+  margin: 5px 0 5px 60px;
+  list-style-type: disc;
+}
+body .main-container .skills .external-links {
+  text-decoration: none;
+  color: #ff4141;
+}
+body .main-container .skills .external-links:hover {
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+body .main-container .skills span {
+  text-decoration: underline;
+  text-decoration-color: #ff4141;
+  font-style: italic;
+  font-weight: 500;
+}
+body .main-container .skills-shadow {
+  box-shadow: 0px 3px 5px 1px #75867b;
+  border-radius: 10px;
+}
+body .footer {
+  z-index: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
+}
+body .footer span {
+  display: inline-block;
+  color: #d9ddda;
+  opacity: 0.7;
+  font-size: 16px;
+}
+body .footer .user-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .6;
+  margin-left: 10px;
+  border-left: 3px solid #a12626;
+}
+body .footer .user-links .phone {
+  text-decoration: none;
+  color: #d9ddda;
+  padding: 0 5px;
+  font-size: 16px;
+  box-shadow: 0px 2px 2px 1px #75867b;
+  border-radius: 5px;
+  height: 20px;
+}
+body .footer .user-links .phone:hover {
+  box-shadow: inset 0px 2px 3px 2px #75867b;
+  border-radius: 5px;
+  height: 20px;
+}
+body .footer .user-links .email,
+body .footer .user-links .telegram {
+  text-decoration: none;
+  color: #d9ddda;
+  padding: 0 5px;
+  font-size: 16px;
+  box-shadow: 0px 2px 2px 1px #75867b;
+  border-radius: 5px;
+  height: 20px;
+}
+body .footer .user-links .email:hover,
+body .footer .user-links .telegram:hover {
+  box-shadow: inset 0px 2px 3px 2px #75867b;
+  border-radius: 5px;
+  height: 20px;
+}
+body .footer .user-links img {
+  width: 24px;
+}
